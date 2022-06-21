@@ -26,6 +26,25 @@ namespace JwtAuthentication.Controllers
 
         }
 
+
+        [HttpPost("login")]
+        public async Task<ActionResult<string>> Login(UserDto request)
+        {
+            if(user.UserName != request.UserName)
+            {
+                return Ok("user found");
+            }
+
+            if(verifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt))
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return BadRequest("User Not found");
+            }
+        }
+
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using (var hmac = new HMACSHA512())
@@ -34,5 +53,15 @@ namespace JwtAuthentication.Controllers
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
             }
         }
+
+        private bool verifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
+        {
+            using(var hmac = new HMACSHA512(user.PasswordSalt))
+            {
+                var computeHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                return computeHash.SequenceEqual(passwordHash);
+            }
+        }
+
     }
 }
