@@ -10,7 +10,6 @@ D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Microsoft.Open
 D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthentication.csproj.AssemblyReference.cache
 D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthentication.GeneratedMSBuildEditorConfig.editorconfig
 D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthentication.AssemblyInfoInputs.cache
 D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthentication.AssemblyInfo.cs
@@ -25,3 +24,8 @@ D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthenticat
 D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\ref\JwtAuthentication.dll
 D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthentication.pdb
 D:\.Net core\JwtAuthentication\JwtAuthentication\obj\Debug\net6.0\JwtAuthentication.genruntimeconfig.cache
+D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\.Net core\JwtAuthentication\JwtAuthentication\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
